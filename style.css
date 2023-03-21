@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    /*background-color: #00161c;*/
+}
+.center
+{
+    display: flex;
+    max-width: 1200px;
+    padding:0 2%;
+    margin:0 auto;
+    flex-wrap: wrap;
+    border: 2px solid greenyellow;
+}
+section.menu
+{
+    width: 100%;
+    height: 100px;
+    background-color: #d8813a;
+}
+.menu_princ
+{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.menu_princ h1
+{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+}
+.players
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+    border: 2px solid red;
+    flex-wrap: wrap;
+
+}
+.player_one, .player_ia
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    border: 2px solid blue;
+}
+.player_one img, .player_ia img
+{
+    max-width: 200px;
+    margin: 0px 100px;
+    opacity: 0.3;
+    cursor: pointer;
+}
