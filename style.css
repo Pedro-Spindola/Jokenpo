@@ -12,19 +12,18 @@
     padding:0 2%;
     margin:0 auto;
     flex-wrap: wrap;
-    border: 2px solid greenyellow;
 }
 section.menu
 {
     width: 100%;
-    height: 100px;
-    background-color: #d8813a;
+    height: 80px;
+    background-color: #ad1844;
 }
 .menu_princ
 {
     display: flex;
     width: 100%;
-    height: 100px;
+    height: 80px;
     align-items: center;
     justify-content: center;
 }
@@ -35,27 +34,126 @@ section.menu
     font-weight: bold;
     align-self: center;
 }
+section.tela_principal
+{
+    min-height: 600px;
+    background-color: #00161c;
+}
 .players
 {
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-content: center;
-    border: 2px solid red;
     flex-wrap: wrap;
-
 }
 .player_one, .player_ia
 {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
-    border: 2px solid blue;
+    background-color: #011920;
 }
 .player_one img, .player_ia img
 {
     max-width: 200px;
     margin: 0px 100px;
     opacity: 0.3;
+}
+.player_one
+{
+    cursor: pointer;
+}
+.placares
+{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.plac1,
+.plac2
+{
+    align-content: center;
+}
+.nome_placa1,
+.nome_placa2
+{
+    color: white;
+}
+.placa_1,
+.placa_2
+{
+    margin: auto;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: #ad1844;
+    border-radius: 25%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+
+}
+.placa_1 h2,
+.placa_2 h2
+{
+    font-size: 28px;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+}
+.placa_text
+{
+    text-align: center;
+    min-width: 50%;
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+
+}
+.popup
+{
+    background-color: rgba(0, 22, 28, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.modal
+{
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    height: 120px;
+    margin: 10% auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 20px;
+    align-items: center;
+    background-color: #acb1b3;
+    
+    
+}
+.modal input[name=mynome]
+{
+    height: 40px;
+    width: 400px;
+    text-align: center;
+    align-items: start;
+    justify-content: flex-start;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.modal input[name=conf]
+{
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-weight: bold;
     cursor: pointer;
 }

@@ -18,29 +18,52 @@
         <div class="center">
             <div class="players">
                 <div class="player_one">
-                    <div><img opt="rock" src="assets/rock.png"/></div>
-                    <div><img opt="paper" src="assets/paper.png"/></div>
-                    <div><img opt="scissors" src="assets/scissors.png"/></div>
-                </div>
-                <div class="placa_text>">
-                    <h2>meu placar</h2>
+                    <div><img opt="pedra" src="assets/rock.png"/></div>
+                    <div><img opt="papel" src="assets/paper.png"/></div>
+                    <div><img opt="tesoura" src="assets/scissors.png"/></div>
+                </div><!--player_one-->
+                <div class="placares">
+                    <div class="plac1">
+                        <div class="placa_1">
+                            <h2 class="placa_one">0</h2>
+                        </div>
+                        <div class="nome_placa1">
+                            <h3 class="nome_jogador"></h3>
+                        </div>
+                    </div><!--plac1-->
+                    <div class="placa_text">
+                        <h1>Resultado foi...</h1>
+                        <h2 class="vencedor"></h2>
+                    </div><!--placa_text-->
+                    <div class="plac2">
+                        <div class="placa_2">
+                            <h2 class="placa_ia">0</h2>
+                        </div>
+                        <div class="nome_placa2">
+                            <h3>IA PLAYER</h3>
+                        </div>
+                    </div><!--plac2-->
                 </div>
                 <div class="player_ia">
-                    <div><img opt="rock" src="assets/rock.png"/></div>
-                    <div><img opt="paper" src="assets/paper.png"/></div>
-                    <div><img opt="scissors" src="assets/scissors.png"/></div>
-                </div>
+                    <div><img opt="pedra" src="assets/rock.png"/></div>
+                    <div><img opt="papel" src="assets/paper.png"/></div>
+                    <div><img opt="tesoura" src="assets/scissors.png"/></div>
+                </div><!--player_ia-->
             </div><!--players-->
         </div><!--center-->
     </section><!--tela_principal-->
-    <!--
-    <div class="janela_modal">
-        <div class="modal">
-            <input type="text" name="nome" placeholder="Coloca o seu nome...">
-            <input type="submit" value="Ok">
-        </div>
-    </div>
-    -->
+
     <script src="js/main.js"></script>
+
+        <div class="popup">
+            <div class="modal">
+                <input type="text" name="mynome" placeholder="Coloca o seu nome...">
+                <input type="button" name="conf" value="Ok">
+            </div>
+        </div>
+
+    <script src="js/modal.js"></script>
+    
+    
 </body>
 </html>
