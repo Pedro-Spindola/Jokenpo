@@ -36,6 +36,7 @@ section.menu
 }
 section.tela_principal
 {
+    width: 100%;
     min-height: 600px;
     background-color: #00161c;
 }
@@ -49,16 +50,19 @@ section.tela_principal
 }
 .player_one, .player_ia
 {
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
+    justify-content: center;
     background-color: #011920;
 }
 .player_one img, .player_ia img
 {
     max-width: 200px;
-    margin: 0px 100px;
-    opacity: 0.3;
+    margin: 0px 50px;
+    justify-content: center;
+    opacity: 0.2;
 }
 .player_one
 {

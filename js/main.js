@@ -1,8 +1,11 @@
 var elementos = document.querySelectorAll('.player_one div > img');
 var playerOpt = "";
 var iaOpt = "";
-var pontos1 = "";
-var pontos2 = "";
+var pontosJogador = "0";
+var pontosIA = "0";
+var contadorJog = document.querySelector('.placa_one')
+var contadorIa = document.querySelector('.placa_ia')
+
 function validarVitoria(){
     
     let vencedor = document.querySelector('.vencedor');
@@ -12,41 +15,47 @@ function validarVitoria(){
         if(iaOpt == "papel"){
             vencedor.innerHTML = "O jogo foi empatado";
         }else if(iaOpt == "tesoura"){
-            pontos2 = 1
             vencedor.innerHTML = "O inimigo ganhou";
+            pontosIA++
         }else if(iaOpt == "pedra"){
-            pontos1 = 1
             vencedor.innerHTML = "O player ganhou";
+            pontosJogador++
         }
     }
     if(playerOpt == "tesoura"){
 
         if(iaOpt == "papel"){
             vencedor.innerHTML = "O player ganhou";
+            pontosJogador++
         }else if(iaOpt == "tesoura"){
             vencedor.innerHTML = "O jogo foi empatado";
         }else if(iaOpt == "pedra"){
             vencedor.innerHTML = "O inimigo ganhou";
+            pontosIA++
         }
     }
     if(playerOpt == "pedra"){
     
         if(iaOpt == "papel"){
             vencedor.innerHTML = "O inimigo ganhou";
+            pontosIA++
         }else if(iaOpt == "tesoura"){
             vencedor.innerHTML = "O player ganhou";
+            pontosJogador++
         }else if(iaOpt == "pedra"){
             vencedor.innerHTML = "O jogo foi empatado";
         }
     }
-    alert(pontos1);
-    alert(pontos2);
+
+    contadorJog.innerHTML = pontosJogador
+    contadorIa.innerHTML = pontosIA
+
 }
 
 function resetOpacityIa(){
     const elementosInimigo = document.querySelectorAll('.player_ia div');
     for( var i = 0; i < elementosInimigo.length; i++){
-        elementosInimigo[i].childNodes[0].style.opacity = 0.3;
+        elementosInimigo[i].childNodes[0].style.opacity = 0.2;
     }
 }
 
@@ -66,7 +75,7 @@ function inimigoJogar(){
 
 function resetOpacityPlayer(){
 for(var i = 0; i < elementos.length; i++){  
-elementos[i].style.opacity = 0.3;
+elementos[i].style.opacity = 0.2;
 }
 }
 
