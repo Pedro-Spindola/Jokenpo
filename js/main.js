@@ -22,7 +22,7 @@ function validarVitoria(){
             vencedor.innerHTML = "O inimigo ganhou";
             pontosIA++
         }else if(iaOpt == "pedra"){
-            vencedor.innerHTML = "O "+nome+" ganhou";
+            vencedor.innerHTML = "O player ganhou";
             pontosJogador++
         }
     }
