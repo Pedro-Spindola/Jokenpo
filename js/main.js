@@ -9,6 +9,10 @@ var contadorIa = document.querySelector('.placa_ia')
 function validarVitoria(){
     
     let vencedor = document.querySelector('.vencedor');
+    const nome = document.querySelector('.modal input[name=mynome]');
+    const nome_jogador = document.querySelector('.nome_jogador');
+    const value = nome.value
+    nome_jogador.innerHTML = value
 
     if(playerOpt == "papel"){
 
@@ -18,7 +22,7 @@ function validarVitoria(){
             vencedor.innerHTML = "O inimigo ganhou";
             pontosIA++
         }else if(iaOpt == "pedra"){
-            vencedor.innerHTML = "O player ganhou";
+            vencedor.innerHTML = "O "+nome+" ganhou";
             pontosJogador++
         }
     }

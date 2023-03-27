@@ -13,4 +13,3 @@ finalizar.addEventListener('click', function(){
     const value = nome.value
     nome_jogador.innerHTML = value
 })
-
